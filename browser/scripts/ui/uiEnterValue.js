@@ -87,7 +87,7 @@ var uiEnterValueControl = function(node, parentNode, onChange, options) {
 				// tab!
 				e.preventDefault()
 				e.stopPropagation()
-				commit()
+				commit(e)
 				$node[0].dispatchEvent(new CustomEvent('tabToNext'))
 			}
 			else if (o.onTransientChange) {
