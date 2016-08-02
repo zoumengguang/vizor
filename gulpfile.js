@@ -210,7 +210,6 @@ gulp.task('watch', ['default'], function() {
 	gulp.watch(paths.js.player.concat(paths.js.engine), ['js:player', 'push'])
 })
 
-
 gulp.task('watch:less', function() {
 	gulp.watch('less/**/*', ['less:site', 'less:editor', 'less:site360']);
 })
